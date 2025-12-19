@@ -47,7 +47,6 @@ X = df[['age_months', 'height_cm', 'weight_kg', 'sex_encoded']]
 y_stunt = df['target_stunting']
 y_waste = df['target_wasting']
 
-# --- PERUBAHAN DISINI: SPLIT DATA ---
 # Membagi data menjadi 80% Training dan 20% Testing untuk evaluasi
 X_train, X_test, y_stunt_train, y_stunt_test, y_waste_train, y_waste_test = train_test_split(
     X, y_stunt, y_waste, test_size=0.2, random_state=42
